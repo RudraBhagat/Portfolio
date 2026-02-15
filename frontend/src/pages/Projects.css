@@ -1,0 +1,286 @@
+/* =====================================
+   PROJECTS PAGE - PREMIUM DARK THEME
+   ===================================== */
+
+.projects {
+  background: linear-gradient(135deg, #0a0e27 0%, #0d1b2a 50%, #0a0e27 100%);
+  background-attachment: fixed;
+  color: #e8e8e8;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =====================================
+   HEADER - PREMIUM STYLING
+   ===================================== */
+
+.projects-header {
+  max-width: 1100px;
+  margin: 0 auto 5rem;
+  text-align: center;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.projects-header h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #00d9ff, #64ffda);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.projects-header p {
+  font-size: 1.15rem;
+  color: #c5c5c5;
+  line-height: 1.8;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+/* =====================================
+   GRID - RESPONSIVE CARDS
+   ===================================== */
+
+.projects-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+/* =====================================
+   PROJECT CARD - PROFESSIONAL & STYLISH
+   ===================================== */
+
+.project-card {
+  background: linear-gradient(135deg, rgba(10, 14, 39, 0.8), rgba(10, 14, 39, 0.6));
+  border: 1.5px solid rgba(0, 217, 255, 0.12);
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(100, 255, 218, 0.1), transparent 70%);
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.project-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  border-color: rgba(100, 255, 218, 0.3);
+  box-shadow: 0 16px 50px rgba(0, 217, 255, 0.2);
+}
+
+.project-card:hover::before {
+  top: -25%;
+  right: -25%;
+}
+
+.project-card h3 {
+  font-size: 1.7rem;
+  background: linear-gradient(135deg, #00d9ff, #64ffda);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #c5c5c5;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* =====================================
+   TECH TAGS - PREMIUM STYLING
+   ===================================== */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.project-tech span {
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.12), rgba(100, 255, 218, 0.08));
+  color: #64ffda;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.project-tech span:hover {
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(100, 255, 218, 0.12));
+  border-color: rgba(100, 255, 218, 0.4);
+  transform: scale(1.05);
+}
+
+/* =====================================
+   BULLET POINTS - IMPROVED
+   ===================================== */
+
+.project-points {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.project-points li {
+  font-size: 0.95rem;
+  color: #b5b5b5;
+  line-height: 1.7;
+  margin-bottom: 0.7rem;
+  transition: all 0.3s ease;
+  list-style: none;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.project-points li::before {
+  content: '▸';
+  color: #00d9ff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.project-points li:hover {
+  transform: translateX(4px);
+  color: #d0d0d0;
+}
+
+/* =====================================
+   LINKS - INTERACTIVE BUTTONS
+   ===================================== */
+
+.project-links {
+  display: flex;
+  gap: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #00d9ff;
+  font-weight: 800;
+  border: 2px solid #00d9ff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.project-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #00d9ff, #64ffda);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.project-links a:hover {
+  background: #00d9ff;
+  color: #0a0e27;
+  box-shadow: 0 8px 20px rgba(0, 217, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+.project-links a:hover::before {
+  left: 0;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+   ===================================== */
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 2.5rem 1.2rem;
+  }
+
+  .projects-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .projects-grid {
+    gap: 2rem;
+  }
+
+  .project-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links a {
+    width: 100%;
+    text-align: center;
+  }
+}

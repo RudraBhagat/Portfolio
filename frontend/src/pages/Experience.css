@@ -1,0 +1,313 @@
+/* =====================================
+   EXPERIENCE TIMELINE - PREMIUM STYLE
+   ===================================== */
+
+.experience {
+  background: linear-gradient(135deg, #0a0e27 0%, #0d1b2a 50%, #0a0e27 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  color: #e8e8e8;
+}
+
+/* Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.header-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00d9ff, #64ffda, transparent);
+  opacity: 0.8;
+}
+
+.experience h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #00d9ff, #64ffda);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+/* Timeline Container */
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+/* Vertical Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #00d9ff, #64ffda, transparent);
+  animation: growDown 1s ease-out;
+}
+
+@keyframes growDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+  display: flex;
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Dot */
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #7c4dff, #00d9ff);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  box-shadow: 0 0 20px rgba(124, 77, 255, 0.6), inset 0 0 10px rgba(0, 217, 255, 0.3);
+  border: 3px solid rgba(10, 14, 39, 1);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(124, 77, 255, 0.6), inset 0 0 10px rgba(0, 217, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(124, 77, 255, 0.8), inset 0 0 15px rgba(0, 217, 255, 0.5);
+  }
+}
+
+/* Card */
+.timeline-card {
+  margin-left: 3.5rem;
+  width: 100%;
+  max-width: 1000px;
+  padding: 2.8rem 3rem;
+  background: linear-gradient(135deg, rgba(10, 14, 39, 0.8), rgba(10, 14, 39, 0.6));
+  border-radius: 10px;
+  border: 1.5px solid rgba(124, 77, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(100, 255, 218, 0.1), transparent 70%);
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.timeline-card:hover {
+  transform: translateY(-8px) translateX(6px);
+  border-color: rgba(0, 217, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 217, 255, 0.15);
+}
+
+.timeline-card:hover::before {
+  top: -25%;
+  right: -25%;
+}
+
+/* Text Styling */
+.timeline-date {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #b388ff;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(179, 136, 255, 0.2), rgba(0, 217, 255, 0.1));
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+}
+
+.timeline-role {
+  font-size: 1.5rem;
+  margin: 0.8rem 0 0.5rem;
+  background: linear-gradient(135deg, #00d9ff, #64ffda);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-company {
+  font-size: 1rem;
+  color: #c5c5c5;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+/* Bullet Points */
+.timeline-card ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-card li {
+  font-size: 0.95rem;
+  color: #c5c5c5;
+  line-height: 1.8;
+  margin-bottom: 0.7rem;
+  transition: all 0.3s ease;
+  list-style: none;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.timeline-card li::before {
+  content: '✦';
+  color: #00d9ff;
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+.timeline-card li:hover {
+  transform: translateX(4px);
+  color: #d0d0d0;
+}
+
+/* Tech Stack */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.tech-stack span {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  background: linear-gradient(135deg, rgba(124, 77, 255, 0.15), rgba(0, 217, 255, 0.08));
+  color: #e0d7ff;
+  border: 1px solid rgba(124, 77, 255, 0.3);
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+.tech-stack span:hover {
+  background: linear-gradient(135deg, rgba(124, 77, 255, 0.25), rgba(0, 217, 255, 0.15));
+  border-color: rgba(0, 217, 255, 0.4);
+  transform: scale(1.08);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience {
+    padding: 2rem 1rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline::before {
+    left: 4px;
+  }
+
+  .timeline-card {
+    margin-left: 2.5rem;
+    padding: 2rem;
+  }
+
+  .timeline-dot {
+    top: 1.2rem;
+    left: -4px;
+  }
+
+  .timeline-item {
+    margin-bottom: 3rem;
+  }
+
+  .timeline-role {
+    font-size: 1.3rem;
+  }
+
+  .tech-stack {
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    padding-left: 1.2rem;
+  }
+
+  .timeline::before {
+    left: 4px;
+  }
+
+  .timeline-card {
+    margin-left: 2rem;
+    padding: 1.5rem;
+  }
+
+  .timeline-role {
+    font-size: 1.15rem;
+  }
+}
+
+  .timeline-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .timeline-role {
+    font-size: 1.2rem;
+  }

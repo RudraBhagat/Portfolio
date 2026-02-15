@@ -1,0 +1,313 @@
+/* =====================================
+   HOME PAGE – PREMIUM DARK LUXURY THEME
+   ===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  background: radial-gradient(circle at top, #111827, #05080f 70%);
+  color: #e5e7eb;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  animation: pageFade 0.8s ease-in;
+}
+
+@keyframes pageFade {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+/* =====================================
+   HERO SECTION
+   ===================================== */
+
+.hero {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.hero-content {
+  max-width: 820px;
+  animation: heroSlide 1s ease forwards;
+}
+
+@keyframes heroSlide {
+  from { opacity: 0; transform: translateY(35px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 900;
+  color: #f9fafb;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.accent-text {
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #22c55e;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: #9ca3af;
+  line-height: 1.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =====================================
+   CTA BUTTONS
+   ===================================== */
+
+.cta-buttons {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 1rem 2.6rem;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  color: #020617;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(56,189,248,0.35);
+}
+
+.btn-secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: #38bdf8;
+  color: #020617;
+  transform: translateY(-4px);
+}
+
+/* =====================================
+   COMMON SECTION CARD STYLE
+   ===================================== */
+
+.about,
+.skills,
+.highlights,
+.quick-nav {
+  max-width: 1100px;
+  margin: 0 auto 5rem;
+  padding: 4rem 2.5rem;
+  background: rgba(15, 23, 42, 0.75);
+  border-radius: 14px;
+  border: 1px solid rgba(148,163,184,0.08);
+  backdrop-filter: blur(14px);
+  transition: all 0.4s ease;
+  animation: sectionFade 0.9s ease forwards;
+}
+
+@keyframes sectionFade {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.about:hover,
+.skills:hover,
+.highlights:hover,
+.quick-nav:hover {
+  border-color: rgba(56,189,248,0.25);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* =====================================
+   SECTION HEADERS
+   ===================================== */
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.header-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #38bdf8, transparent);
+}
+
+.section-header h3 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =====================================
+   ABOUT TEXT
+   ===================================== */
+
+.about-text {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #cbd5f5;
+  text-align: justify;
+}
+
+/* =====================================
+   SKILLS GRID
+   ===================================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  background: rgba(2, 6, 23, 0.7);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(148,163,184,0.1);
+  transition: all 0.35s ease;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(56,189,248,0.4);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+}
+
+.skill-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  line-height: 1.7;
+}
+
+/* =====================================
+   HIGHLIGHTS
+   ===================================== */
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+}
+
+.highlight-card {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 14px;
+  background: rgba(2,6,23,0.75);
+  border: 1px solid rgba(56,189,248,0.15);
+  transition: all 0.4s ease;
+}
+
+.highlight-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+}
+
+.highlight-number {
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: #22c55e;
+  margin-bottom: 1rem;
+}
+
+.highlight-card p {
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+/* =====================================
+   QUICK NAV LINKS
+   ===================================== */
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  background: rgba(2,6,23,0.7);
+  border: 1px solid rgba(148,163,184,0.1);
+  color: #e5e7eb;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transition: all 0.35s ease;
+}
+
+.nav-link:hover {
+  transform: translateX(12px);
+  border-color: #38bdf8;
+  background: rgba(56,189,248,0.08);
+}
+
+.link-icon {
+  font-size: 1.4rem;
+  color: #38bdf8;
+  font-weight: 900;
+}
+
+/* =====================================
+   RESPONSIVE
+   ===================================== */
+
+@media (max-width: 768px) {
+  .home { padding: 2rem 1rem; }
+  .cta-buttons { flex-direction: column; }
+  .btn { width: 100%; }
+  .section-header h3 { font-size: 1.6rem; }
+}
