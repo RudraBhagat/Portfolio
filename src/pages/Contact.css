@@ -1,60 +1,23 @@
 /* =====================================
-   CONTACT PAGE - PREMIUM DARK THEME
+   CONTACT PAGE – PREMIUM DARK THEME
+   (NO BLUE SHADES)
    ===================================== */
 
 .contact {
-  background: linear-gradient(135deg, #0a0e27 0%, #0d1b2a 50%, #0a0e27 100%);
-  background-attachment: fixed;
-  color: #e8e8e8;
+  background: linear-gradient(
+    180deg,
+    rgba(12, 12, 12, 0.95),
+    rgba(8, 8, 8, 0.98));
   min-height: 100vh;
   padding: 4rem 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #d6d6de;
+  animation: pageFade 0.8s ease-in-out;
 }
 
-/* Section Header */
-.section-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 4rem;
-  animation: fadeInDown 0.6s ease-out;
-}
-
-.header-line {
-  flex: 1;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #00d9ff, #64ffda, transparent);
-  opacity: 0.8;
-}
-
-.contact h3 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  background: linear-gradient(135deg, #00d9ff, #64ffda);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: -0.5px;
-}
-
-/* Main Card */
-.contact-card {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 4rem 3rem;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(10, 14, 39, 0.8), rgba(10, 14, 39, 0.6));
-  border: 1.5px solid rgba(0, 217, 255, 0.12);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  animation: slideUp 0.8s ease-out;
-}
-
-@keyframes slideUp {
+@keyframes pageFade {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -62,179 +25,201 @@
   }
 }
 
-/* Intro */
-.contact-intro {
-  font-size: 1.1rem;
-  color: #c5c5c5;
-  text-align: center;
-  line-height: 1.9;
-  margin-bottom: 3rem;
-  animation: fadeInUp 0.8s ease-out 0.2s both;
+/* ================= HEADER ================= */
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-bottom: 4rem;
 }
 
-/* Form */
+.header-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(176, 148, 255, 0.6),
+    transparent
+  );
+}
+
+.contact h3 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #f1f1f6;
+  letter-spacing: -0.5px;
+  animation: fadeDown 0.6s ease-out;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= CARD ================= */
+
+.contact-card {
+  max-width: 780px;
+  margin: auto;
+  padding: 3.5rem 3rem;
+  border-radius: 14px;
+  background: linear-gradient(
+    145deg,
+    rgba(25, 25, 40, 0.85),
+    rgba(15, 15, 25, 0.85)
+  );
+  border: 1px solid rgba(180, 180, 255, 0.12);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+  animation: slideUp 0.9s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= INTRO ================= */
+
+.contact-intro {
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #bcbccc;
+  margin-bottom: 3rem;
+  animation: fadeUp 0.8s ease 0.2s both;
+}
+
+/* ================= FORM ================= */
+
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
-  animation: fadeInUp 0.8s ease-out 0.3s both;
-}
-
-.form-group {
-  position: relative;
+  gap: 1.6rem;
+  animation: fadeUp 0.8s ease 0.3s both;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 1.2rem 1.5rem;
-  background: rgba(10, 14, 39, 0.6);
-  border: 1.5px solid rgba(0, 217, 255, 0.1);
-  border-radius: 8px;
-  color: #e8e8e8;
+  padding: 1.15rem 1.4rem;
+  background: rgba(20, 20, 35, 0.9);
+  border: 1px solid rgba(180, 148, 255, 0.18);
+  border-radius: 9px;
+  color: #f1f1f6;
   font-size: 0.95rem;
   outline: none;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  font-family: inherit;
-  font-weight: 400;
-  letter-spacing: 0.3px;
+  transition: all 0.35s ease;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #8a8a8a;
+  color: #8e8ea0;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: rgba(0, 217, 255, 0.4);
-  background: rgba(10, 14, 39, 0.8);
-  box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.1), inset 0 0 20px rgba(0, 217, 255, 0.05);
+  border-color: rgba(255, 186, 120, 0.6);
+  box-shadow: 0 0 0 3px rgba(255, 186, 120, 0.15);
+  transform: translateY(-1px);
 }
 
 .form-group textarea {
   resize: vertical;
   min-height: 120px;
-  max-height: 300px;
 }
 
-/* Button */
+/* ================= BUTTON ================= */
+
 .contact-form .btn {
   margin-top: 1.5rem;
   align-self: center;
-  animation: fadeInUp 0.8s ease-out 0.4s both;
+  padding: 0.9rem 2.6rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffb86c, #ff7a18);
+  color: #111;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  transition: all 0.35s ease;
 }
 
-/* Contact Info */
+.contact-form .btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 140, 50, 0.45);
+}
+
+/* ================= CONTACT INFO ================= */
+
 .contact-info {
   margin-top: 3rem;
   text-align: center;
-  color: #b8b8b8;
   font-size: 0.95rem;
-  line-height: 2;
-  animation: fadeInUp 0.8s ease-out 0.5s both;
+  line-height: 2.1;
+  color: #bdbdd0;
+  animation: fadeUp 0.8s ease 0.5s both;
+}
+
+.contact-info span {
+  color: #ffb86c;
+  font-weight: 700;
+  letter-spacing: 0.4px;
 }
 
 .contact-info p {
-  margin: 0.5rem 0;
   transition: all 0.3s ease;
 }
 
 .contact-info p:hover {
-  color: #d0d0d0;
+  color: #f1f1f6;
   transform: scale(1.02);
 }
 
-.contact-info span {
-  color: #00d9ff;
-  font-weight: 700;
-  letter-spacing: 0.3px;
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Social Links */
-.contact-links {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  animation: fadeInUp 0.8s ease-out 0.6s both;
-}
+/* ================= RESPONSIVE ================= */
 
-.contact-links a {
-  text-decoration: none;
-  color: #e8e8e8;
-  font-weight: 700;
-  position: relative;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  padding: 0.8rem 1.5rem;
-  border: 1.5px solid rgba(0, 217, 255, 0.2);
-  border-radius: 8px;
-  background: linear-gradient(135deg, rgba(0, 217, 255, 0.08), rgba(100, 255, 218, 0.04));
-  font-size: 0.95rem;
-  letter-spacing: 0.3px;
-}
-
-.contact-links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #00d9ff, #64ffda);
-  transition: width 0.3s ease;
-}
-
-.contact-links a:hover {
-  color: #00d9ff;
-  border-color: rgba(100, 255, 218, 0.3);
-  background: linear-gradient(135deg, rgba(0, 217, 255, 0.12), rgba(100, 255, 218, 0.08));
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 217, 255, 0.1);
-}
-
-.contact-links a:hover::after {
-  width: 100%;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
   .contact {
     padding: 2.5rem 1.2rem;
   }
 
   .contact-card {
-    padding: 2.5rem 1.5rem;
+    padding: 2.4rem 1.6rem;
   }
 
   .contact h3 {
     font-size: 2rem;
   }
-
-  .contact-intro {
-    font-size: 1rem;
-  }
-
-  .contact-links {
-    gap: 1rem;
-  }
-
-  .contact-links a {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .contact {
-    padding: 2rem 1rem;
-  }
-
-  .contact-card {
-    padding: 2rem 1.2rem;
-  }
-
   .contact h3 {
     font-size: 1.6rem;
   }
@@ -244,17 +229,6 @@
   }
 
   .header-line {
-    height: 1.5px;
-    width: 50px;
-  }
-
-  .contact-links {
-    flex-direction: column;
-  }
-
-  .contact-links a {
-    width: 100%;
-    text-align: center;
+    width: 60px;
   }
 }
-

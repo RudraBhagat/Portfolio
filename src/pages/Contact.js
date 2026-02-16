@@ -43,17 +43,9 @@ function Contact() {
 
         {/* Direct Info */}
         <div className="contact-info">
-          <p><span>Email:</span> rudrabhagat@email.com</p>
-          <p><span>Location:</span> India</p>
-        </div>
-
-        {/* Social Links */}
-        <div className="contact-links">
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="/resume/Rudra_Bhagat_Resume.pdf" target="_blank" rel="noreferrer">
-            Resume
-          </a>
+          <p><span>Email:</span> rudrabhagat2625@gmail.com</p>
+          <p><span>Mobile:</span> +91 9699655702</p>
+          <p><span>Location:</span> Chhatrapati Sambhajinagar, Mahartashtra, India</p>
         </div>
       </div>
     </section>

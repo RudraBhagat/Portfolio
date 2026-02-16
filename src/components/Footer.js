@@ -24,7 +24,7 @@ function Footer() {
         {/* Social Icons */}
         <div className="footer-socials">
           <a
-            href="https://github.com/your-github"
+            href="https://github.com/RudraBhagat"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -33,7 +33,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://linkedin.com/in/rudrabhagat"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
