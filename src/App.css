@@ -8,7 +8,7 @@
 
 .App {
   min-height: 100vh;
-  background: #070707;
+  background: #000000;
   display: flex;
   flex-direction: column;
 }

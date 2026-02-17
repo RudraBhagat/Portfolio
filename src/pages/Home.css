@@ -9,17 +9,15 @@
 }
 
 .home {
-  /* background: radial-gradient(circle at top, #141414, #080808 70%); */
-  background: linear-gradient(
-    180deg,
-    rgba(12, 12, 12, 0.95),
-    rgba(8, 8, 8, 0.98));
+  background: #000000;
   color: #e6e6e6;
   min-height: 100vh;
   padding: 4rem 2rem;
   font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
   animation: pageFade 1s ease;
 }
+
+
 
 @keyframes pageFade {
   from { opacity: 0 }
@@ -38,6 +36,47 @@
   text-align: center;
   margin-bottom: 5rem;
 }
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Image container */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: imageFloat 6s ease-in-out infinite;
+}
+
+/* Image styling */
+.hero-image img {
+  width: 100%;
+  max-width: 380px;
+  filter: grayscale(100%) contrast(1.1);
+  opacity: 0.9;
+  transition: all 0.6s ease;
+}
+
+/* Hover effect */
+.hero-image img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Floating animation */
+@keyframes imageFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
 
 .hero-content {
   max-width: 820px;
@@ -118,8 +157,9 @@
 }
 
 .btn-primary:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 45px rgba(212,175,55,0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+  filter: brightness(1.05);
 }
 
 .btn-secondary {

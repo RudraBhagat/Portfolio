@@ -4,25 +4,42 @@ import './Home.css';
 function Home() {
   return (
     <section className="home">
-      {/* Hero Section */}
-      <div className="hero">
-        <div className="hero-content">
-          <h1 className="hero-title">Hi, I'm <span className="accent-text">Rudra Bhagat</span></h1>
-          <p className="hero-subtitle">Data Scientist | ML Engineer | AI Enthusiast</p>
-          <p className="hero-description">
-           I build data-driven solutions using Machine Learning and Deep Learning.
-          </p>
-          <div className="cta-buttons">
-            <a href="/projects" className="btn btn-primary">
-              View Projects
-            </a>
+    {/* Hero Section */}
+    <div className="hero">
+      <div className="hero-inner">
+    
+      {/* Left Content */}
+      <div className="hero-content">
+        <h1 className="hero-title">
+          Hi, I'm <span className="accent-text">Rudra Bhagat</span>
+        </h1>
+        <p className="hero-subtitle">Data Scientist | ML Engineer | AI Enthusiast</p>
+        <p className="hero-description">
+          I build data-driven solutions using Machine Learning and Deep Learning.
+        </p>
 
-            <a href="/resume/Rudra_Bhagat_Resume.pdf" target='_blank' className="btn btn-secondary">
-              Download Resume
-            </a>
-          </div>
+        <div className="cta-buttons">
+          <a href="/projects" className="btn btn-primary">
+            View Projects
+          </a>
+
+          <a
+            href="/resume/Rudra_Bhagat_Resume.pdf"
+            target="_blank"
+            className="btn btn-secondary"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
+
+      {/* Right Image */}
+        <div className="hero-image">
+          <img src={require('D:\\Portfolio\\src\\assets\\comment-devenir-intelligent-e1639848607825.jpg')} alt="AI Brain" />
+        </div>
+      </div>
+    </div>
+
 
       {/* About Me */}
       <div className="about">
