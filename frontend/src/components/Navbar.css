@@ -1,0 +1,161 @@
+/* =====================================
+   NAVBAR — PREMIUM DARK (NO BLUE)
+   ===================================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background: #000000;
+
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  animation: navbarReveal 0.7s ease forwards;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* Entrance animation */
+@keyframes navbarReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================================
+   BRAND
+   ===================================== */
+
+.brand {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+
+  background: linear-gradient(135deg, #d4af37, #b892ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-decoration: none;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.brand:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.35));
+}
+
+/* =====================================
+   NAV LINKS
+   ===================================== */
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  position: relative;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  color: #b8b8b8;
+  text-decoration: none;
+
+  padding: 0.2rem 0;
+
+  transition:
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+/* Underline animation */
+.nav-list a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+
+  width: 0%;
+  height: 2px;
+
+  background: linear-gradient(90deg, #d4af37, #b892ff);
+  border-radius: 2px;
+
+  transition: width 0.35s ease;
+}
+
+/* Hover */
+.nav-list a:hover {
+  color: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
+
+/* Active link */
+.nav-list a.active {
+  color: #d4af37;
+}
+
+.nav-list a.active::after {
+  width: 100%;
+}
+
+/* =====================================
+   RESPONSIVE
+   ===================================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.85rem 1.4rem;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-list {
+    gap: 1.2rem;
+  }
+
+  .nav-list a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-list {
+    gap: 0.9rem;
+  }
+
+  .nav-list a {
+    font-size: 0.85rem;
+  }
+}

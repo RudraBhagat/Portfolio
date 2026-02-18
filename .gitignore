@@ -21,3 +21,19 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# Node
+backend/node_modules/
+frontend/node_modules/
+
+# Build
+dist/
+build/
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
