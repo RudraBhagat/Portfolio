@@ -107,7 +107,7 @@ function Projects() {
 
           <div className="project-links">
             <a href="https://github.com/RudraBhagat/Electric_Car_Sales" target="_blank" rel="noreferrer">GitHub</a>
-            {/* <a href="https://electric-car-sales.streamlit.app/" target="_blank" rel="noreferrer">Live Demo</a> */}
+            <a href="https://electric-car-sales.streamlit.app/" target="_blank" rel="noreferrer">Live Demo</a> 
           </div>
         </div>
 
