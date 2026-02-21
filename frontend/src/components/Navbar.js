@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar" role="navigation" aria-label="Main navigation">
       <NavLink to="/" className="brand">
-        Rudra | Data Science
+        Rudra | Data Scientist
       </NavLink>
 
       <ul className="nav-list">
