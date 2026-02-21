@@ -11,7 +11,7 @@ function Home() {
       {/* Left Content */}
       <div className="hero-content">
         <h1 className="hero-title">
-          Hi, I'm <span className="accent-text">Rudra Bhagat</span>
+          <span className="accent-text">Rudra Bhagat</span>
         </h1>
         <p className="hero-subtitle">Data Scientist | ML Engineer | AI Enthusiast</p>
         <p className="hero-description">

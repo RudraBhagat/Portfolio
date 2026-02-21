@@ -53,7 +53,7 @@ function Footer() {
 
       {/* Bottom line */}
       <div className="footer-bottom">
-        © 2026 Rudra Bhagat. Built with React & EmailJS.
+        © 2026 Rudra Bhagat. Built with React & NodeJS.
       </div>
     </footer>
   );
