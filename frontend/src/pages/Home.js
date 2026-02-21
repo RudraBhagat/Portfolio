@@ -127,10 +127,6 @@ function Home() {
             <span className="link-icon">→</span>
             <span>My Experience</span>
           </a>
-          <a href="/contact" className="nav-link">
-            <span className="link-icon">→</span>
-            <span>Get In Touch</span>
-          </a>
         </div>
       </div>
     </section>

@@ -10,7 +10,9 @@ function Footer() {
         {/* Name & Role */}
         <div className="footer-brand">
           <h3>Rudra Bhagat</h3>
-          <p>Data Scientist | ML Engineer</p>
+          <p>Chhatrapati Sambhajinagar, Maharashtra, India</p>
+          <p>rudrabhagat2625@gmail.com</p>
+          <p>+91 9699655702</p>
         </div>
 
         {/* Quick Links */}
