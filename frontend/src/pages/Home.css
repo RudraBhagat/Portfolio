@@ -44,6 +44,17 @@
   gap: 3rem;
 }
 
+.cursor {
+  margin-left: 4px;
+  animation: blink 1s infinite;
+  font-weight: 700;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
 /* Image container */
 .hero-image {
   display: flex;

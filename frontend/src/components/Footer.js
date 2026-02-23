@@ -1,5 +1,13 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaFileDownload
+} from "react-icons/fa";
 import "./Footer.css";
 
 function Footer() {
@@ -7,12 +15,25 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
 
-        {/* Name & Role */}
+        {/* Brand Info */}
         <div className="footer-brand">
           <h3>Rudra Bhagat</h3>
+
           <p>Chhatrapati Sambhajinagar, Maharashtra, India</p>
-          <p>rudrabhagat2625@gmail.com</p>
-          <p>+91 9699655702</p>
+
+          {/* Email */}
+          <p>
+            <a href="mailto:rudrabhagat2625@gmail.com">
+              <FaEnvelope /> rudrabhagat2625@gmail.com
+            </a>
+          </p>
+
+          {/* Phone */}
+          <p>
+            <a href="tel:+919699655702">
+              <FaPhoneAlt /> +91 9699655702
+            </a>
+          </p>
         </div>
 
         {/* Quick Links */}
@@ -24,6 +45,7 @@ function Footer() {
 
         {/* Social Icons */}
         <div className="footer-socials">
+
           <a
             href="https://github.com/RudraBhagat"
             target="_blank"
@@ -43,6 +65,24 @@ function Footer() {
           </a>
 
           <a
+            href="https://instagram.com/your_instagram_username"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <FaInstagram />
+          </a>
+
+          <a
+            href="https://twitter.com/your_twitter_username"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <FaTwitter />
+          </a>
+
+          <a
             href="/resume/Rudra_Bhagat_Resume.pdf"
             target="_blank"
             aria-label="Resume"
@@ -52,9 +92,9 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom line */}
+      {/* Bottom Line */}
       <div className="footer-bottom">
-        © 2026 Rudra Bhagat. Built with React & NodeJS.
+        © 2026 Rudra Bhagat. Built with React & Node.js.
       </div>
     </footer>
   );
