@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A modern, full-stack portfolio website built with React and Express. Showcase your projects, experience, and allow visitors to contact you with an integrated email system.
+A modern, full-stack portfolio website built with React and Express. Showcase your projects, experience, and allow visitors to contact you.
 
 ## 🌟 Features
 
@@ -8,10 +8,7 @@ A modern, full-stack portfolio website built with React and Express. Showcase yo
 - **Modern UI**: Built with Tailwind CSS for a clean, professional appearance
 - **Smooth Animations**: ScrollReveal integration for engaging page animations
 - **Multi-page Navigation**: React Router for seamless page transitions
-- **Contact Form**: Fully functional contact form with email integration
-- **Spam Protection**: Honeypot field to prevent bot submissions
 - **Icon Library**: Comprehensive icon support with React Icons
-- **Backend API**: Express server with nodemailer for email notifications
 
 ## 🛠️ Tech Stack
 
@@ -21,12 +18,6 @@ A modern, full-stack portfolio website built with React and Express. Showcase yo
 - **Tailwind CSS** 4.1.18 - Utility-first CSS framework
 - **React Icons** 5.5.0 - Icon component library
 - **ScrollReveal** 4.0.9 - Scroll animation library
-
-### Backend
-- **Express** 5.2.1 - Web framework
-- **Nodemailer** 8.0.1 - Email service
-- **CORS** 2.8.6 - Cross-origin resource sharing
-- **dotenv** 17.3.1 - Environment variable management
 
 ## 📁 Project Structure
 
@@ -48,9 +39,7 @@ Portfolio/
 │   │   ├── App.js
 │   │   └── index.js
 │   └── package.json
-└── backend/                 # Express server
-    ├── Server.js            # Main server file
-    └── package.json
+
 ```
 
 ## 🚀 Getting Started
@@ -74,23 +63,6 @@ Portfolio/
    npm install
    ```
 
-3. **Install backend dependencies**
-   ```bash
-   cd ../backend
-   npm install
-   ```
-
-### Environment Setup
-
-Create a `.env` file in the `backend` folder with the following variables:
-
-```env
-EMAIL_USER=your-email@gmail.com
-EMAIL_PASS=your-app-password
-```
-
-**Note:** For Gmail, use an [App Password](https://support.google.com/accounts/answer/185833) instead of your regular password.
-
 ## 💻 Running the Application
 
 ### Development Mode
@@ -101,13 +73,6 @@ cd frontend
 npm start
 ```
 The frontend will open at [http://localhost:3000](http://localhost:3000)
-
-**Terminal 2 - Backend**
-```bash
-cd backend
-npm start
-```
-The backend server will run on [http://localhost:5000](http://localhost:5000) (or your configured port)
 
 ### Production Build
 
@@ -123,39 +88,6 @@ This creates an optimized build in the `frontend/build` folder.
 - **Home**: Landing page with introduction
 - **Projects**: Showcase of your projects and work
 - **Experience**: Professional experience and skills
-- **Contact**: Contact form for visitors to reach you
-
-## 📧 Contact Form
-
-The contact form on the Contact page:
-- Collects name, email, subject, and message
-- Includes honeypot spam protection
-- Sends emails via nodemailer
-- Provides user feedback on submission status
-
-## 🔄 API Endpoints
-
-### POST /api/contact
-Submits a contact form request and sends an email notification.
-
-**Request Body:**
-```json
-{
-  "name": "visitor name",
-  "email": "visitor@email.com",
-  "subject": "inquiry subject",
-  "message": "message content",
-  "botField": ""
-}
-```
-
-**Response:**
-```json
-{
-  "success": true,
-  "message": "Email sent successfully"
-}
-```
 
 ## 🎨 Customization
 
@@ -180,15 +112,6 @@ The site is fully responsive and optimized for:
 
 ## 🐛 Troubleshooting
 
-**Email not sending?**
-- Verify EMAIL_USER and EMAIL_PASS in `.env`
-- Check your Gmail app password is correctly set
-- Ensure backend server is running
-
-**CORS errors?**
-- Check that backend is running on the correct port
-- Verify CORS is enabled in Server.js
-
 **Animations not showing?**
 - Clear browser cache
 - Ensure ScrollReveal library is properly installed
@@ -203,7 +126,7 @@ Feel free to submit issues or pull requests to improve the portfolio.
 
 ## 👤 Author
 
-Your Name Here
+Rudra Bhagat
 
 ### Analyzing the Bundle Size
 
