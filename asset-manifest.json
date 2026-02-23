@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.31fa68d8.css",
+    "main.js": "/Portfolio/static/js/main.dbdd54f5.js",
+    "static/js/453.20359781.chunk.js": "/Portfolio/static/js/453.20359781.chunk.js",
+    "static/media/comment-devenir-intelligent-e1639848607825.jpg": "/Portfolio/static/media/comment-devenir-intelligent-e1639848607825.700eba716eb5f7e5b898.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.31fa68d8.css.map": "/Portfolio/static/css/main.31fa68d8.css.map",
+    "main.dbdd54f5.js.map": "/Portfolio/static/js/main.dbdd54f5.js.map",
+    "453.20359781.chunk.js.map": "/Portfolio/static/js/453.20359781.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31fa68d8.css",
+    "static/js/main.dbdd54f5.js"
+  ]
+}
