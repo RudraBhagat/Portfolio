@@ -1,23 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import './Home.css';
 
 function Home() {
 
   /* =============================
-     TYPEWRITER EFFECT
+     TYPEWRITER ROLES (MEMOIZED)
      ============================= */
 
-  const roles = [
+  const roles = useMemo(() => [
     "Data Scientist",
     "ML Engineer",
     "AI Enthusiast",
     "Tech & Gadget Enthusiast"
-  ];
+  ], []);
 
   const [text, setText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+
+  /* =============================
+     TYPEWRITER EFFECT
+     ============================= */
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
@@ -42,7 +46,7 @@ function Home() {
     }, speed);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, roleIndex]);
+  }, [charIndex, isDeleting, roleIndex, roles]);
 
   return (
     <section className="home">
