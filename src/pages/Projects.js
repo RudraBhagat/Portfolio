@@ -51,7 +51,7 @@ function Projects() {
         {/* Project 2 */}
         <div className="project-card">
           <div>
-            <h3>Brain Tumor Classification</h3>
+            <h3>NeuroScan AI</h3>
             <p className="project-desc">
               Deep learning-based system to classify brain MRI images and detect
               tumor presence using CNN architecture.
@@ -76,6 +76,7 @@ function Projects() {
 
           <div className="project-links">
             <a href="https://github.com/RudraBhagat/Brain_Tumor_Detection" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://neuroscan-ai-zcnt.onrender.com/" target="_blank" rel="noreferrer">Live</a>
           </div>
         </div>
 
