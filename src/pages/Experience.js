@@ -20,7 +20,7 @@ function Experience() {
 
           <div className="timeline-card">
             <span className="timeline-date">Oct 2025 – Present</span>
-            <h4 className="timeline-role">AI/ML Engineer</h4>
+            <h4 className="timeline-role">AI/ML Engineer Intern</h4>
             <p className="timeline-company">Farmseasy Tech Solutions Private Limited · Hybrid</p>
 
             <ul>
