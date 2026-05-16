@@ -11,24 +11,20 @@ import {
 import "./Footer.css";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-container">
-
-        {/* Brand Info */}
         <div className="footer-brand">
           <h3>Rudra Bhagat</h3>
-
+          <p>AI/ML Engineer focused on building practical data products for real users.</p>
           <p>Chhatrapati Sambhajinagar, Maharashtra, India</p>
-
-          {/* Email */}
           <p>
             <a href="mailto:rudrabhagat2625@gmail.com">
               <FaEnvelope /> rudrabhagat2625@gmail.com
             </a>
           </p>
-
-          {/* Phone */}
           <p>
             <a href="tel:+919699655702">
               <FaPhoneAlt /> +91 9699655702
@@ -36,16 +32,14 @@ function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
         <ul className="footer-links">
           <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/experience">Experience</a></li>
+          <li><a href="/projects">Case Studies</a></li>
+          <li><a href="/experience">Work Experience</a></li>
+          <li><a href="/resume/Rudra_Bhagat_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a></li>
         </ul>
 
-        {/* Social Icons */}
         <div className="footer-socials">
-
           <a
             href="https://github.com/RudraBhagat"
             target="_blank"
@@ -63,7 +57,6 @@ function Footer() {
           >
             <FaLinkedin />
           </a>
-
           <a
             href="https://instagram.com/rudrabhagat2625"
             target="_blank"
@@ -72,7 +65,6 @@ function Footer() {
           >
             <FaInstagram />
           </a>
-
           <a
             href="https://twitter.com/rudrabhagat2625"
             target="_blank"
@@ -81,10 +73,10 @@ function Footer() {
           >
             <FaTwitter />
           </a>
-
           <a
             href="/resume/Rudra_Bhagat_Resume.pdf"
             target="_blank"
+            rel="noreferrer"
             aria-label="Resume"
           >
             <FaFileDownload />
@@ -92,9 +84,8 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom Line */}
       <div className="footer-bottom">
-        © 2026 Rudra Bhagat. Built with React & Node.js.
+        © {year} Rudra Bhagat. Open to AI/ML engineering and data science opportunities.
       </div>
     </footer>
   );
