@@ -20,37 +20,6 @@ function Projects() {
         {/* Project 1 */}
         <div className="project-card">
           <div>
-            <h3>Car Price Prediction System</h3>
-            <p className="project-desc">
-              A machine learning model that predicts car prices based on features
-              such as brand, mileage, fuel type, and manufacturing year.
-            </p>
-
-            <div className="project-tech">
-              <span>Python</span>
-              <span>Pandas</span>
-              <span>Scikit-learn</span>
-              <span>numpy</span>
-              <span>Random Forest</span>
-              <span>Streamlit</span>
-              <span>Jupyter Notebook</span>
-            </div>
-
-            <ul className="project-points">
-              <li>Performed data cleaning and feature engineering</li>
-              <li>Trained Random Forest regression model</li>
-              <li>Deployed the model using Streamlit web app</li>
-            </ul>
-          </div>
-
-          <div className="project-links">
-            <a href="https://github.com/RudraBhagat/Car_Price_Prediction" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </div>
-
-        {/* Project 2 */}
-        <div className="project-card">
-          <div>
             <h3>NeuroScan AI</h3>
             <p className="project-desc">
               Deep learning-based system to classify brain MRI images and detect
@@ -80,10 +49,10 @@ function Projects() {
           </div>
         </div>
 
-        {/* Project 3 */}
+        {/* Project 2 */}
         <div className="project-card">
           <div>
-            <h3>EV Cars Sales Forecasting</h3>
+            <h3>EV Cars Sales Prediction & Analysis</h3>
             <p className="project-desc">
               Forecasted future sales using historical data with statistical
               time series modeling techniques.
@@ -112,7 +81,7 @@ function Projects() {
           </div>
         </div>
 
-        {/* Project 4 */}
+        {/* Project 3 */}
         <div className="project-card">
           <div>
             <h3>Fitness Buddy - AI Fitness Assistant</h3>
@@ -141,7 +110,95 @@ function Projects() {
           </div>
         </div>
 
+        {/* Project 4 */}
+        <div className="project-card">
+          <div>
+            <h3>Car Price Prediction System</h3>
+            <p className="project-desc">
+              A machine learning model that predicts car prices based on features
+              such as brand, mileage, fuel type, and manufacturing year.
+            </p>
+
+            <div className="project-tech">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Scikit-learn</span>
+              <span>numpy</span>
+              <span>Random Forest</span>
+              <span>Streamlit</span>
+              <span>Jupyter Notebook</span>
+            </div>
+
+            <ul className="project-points">
+              <li>Performed data cleaning and feature engineering</li>
+              <li>Trained Random Forest regression model</li>
+              <li>Deployed the model using Streamlit web app</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            <a href="https://github.com/RudraBhagat/Car_Price_Prediction" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
         {/* Project 5 */}
+        <div className="project-card">
+          <div>
+            <h3>Insurance Risk & Claims Analysis</h3>
+            <p className="project-desc">
+              Analyzed 37,542 auto insurance policies to uncover risk factors, claim patterns, and demographic trends influencing claim amounts and frequency.
+            </p>
+
+            <div className="project-tech">
+              <span>Power BI</span>
+              <span>Excel</span>
+              <span>DAX</span>
+              <span>Data Modeling</span>
+              <span>KPI Dashboards</span>
+            </div>
+
+            <ul className="project-points">
+              <li>$187.8M in total claims analyzed across 5 geographic coverage zones</li>
+              <li>Identified urban commercial vehicles as highest-risk segment ($5,162 avg claim)</li>
+              <li>Built interactive KPI dashboard with demographic, vehicle, and geographic slicers</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            <a href="https://github.com/RudraBhagat/Insurance_Claim_and_Risk_Analysis.git" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        {/* Project 6 */}
+        <div className="project-card">
+          <div>
+            <h3>Customer Shopping Behavior Analysis</h3>
+            <p className="project-desc">
+              Full-stack analysis of 3,900 retail customer records using Python, MySQL, and Power BI — covering data cleaning, feature engineering, SQL querying, and interactive visualization.
+            </p>
+
+            <div className="project-tech">
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>Power BI</span>
+              <span>SQLAlchemy</span>
+              <span>Pandas</span>
+              <span>Jupyter Notebook</span>
+            </div>
+
+            <ul className="project-points">
+              <li>Built end-to-end pipeline from raw CSV to MySQL using SQLAlchemy + PyMySQL</li>
+              <li>Wrote 10 business intelligence SQL queries using CTEs, window functions, and subqueries</li>
+              <li>Found subscribed customers drive disproportionately higher revenue vs non-subscribers</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            <a href="https://github.com/RudraBhagat/Customer_Behavior_Analysis.git" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        {/* Project 7 */}
         <div className="project-card">
           <div>
             <h3>BlinkIt Sales Analysis</h3>
